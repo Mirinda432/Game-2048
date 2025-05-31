@@ -1,39 +1,31 @@
-# 2048 Game in C++
+# 2048 Game - Console Edition
 
-A console-based implementation of the classic 2048 game with customizable board size.
+![image](https://github.com/user-attachments/assets/c9de1eb5-a390-4fa8-b070-d5464d5ce586)
 
-## Features
 
-- 🎮 Classic 2048 gameplay mechanics
-- 🔢 Adjustable board size (3x3 to 9x9)
-- 📊 Score tracking
-- 🏆 Maximum tile achievement tracking
-- 🖥️ Cross-platform support (Windows/Linux/macOS)
-- 🎨 Dynamic board formatting based on tile values
+Классическая игра 2048 с поддержкой цветного интерфейса, выбора языка и размера игрового поля, реализованная на C++ для консоли.
 
-## Requirements
+## Особенности
 
-- C++ compiler (GCC, Clang, or MSVC)
-- CMake (optional, for building)
+- 🎮 **Полноценная механика 2048** с объединением плиток
+- 🌍 **Двуязычный интерфейс** (английский/русский)
+- 🎨 **Цветные плитки** с разными цветами для разных значений
+- 📏 **Настраиваемый размер поля** от 3x3 до 9x9
+- 🖥 **Кроссплатформенность** (Windows/Linux/macOS)
+- ✨ **Плавная анимация** без мерцания (скрытие курсора при обновлении)
 
-## How to Play
+## Системные требования
 
-### Controls
-- W   - Move Up
-- A  - Move Left
-- S  - Move Down
-- D  - Move Right
-- Q - Quit Game
+- Компилятор C++ с поддержкой C++11 (GCC, Clang, MSVC)
+- Windows 10+ или современный терминал Linux/macOS
 
-### Game Rules
-1. Tiles slide in the chosen direction until they hit the wall or another tile
-2. Matching tiles merge into their sum
-3. After each move, a new tile (2 or 4) appears
-4. Game ends when the board is full with no possible merges
+## Установка и запуск
 
-## Installation & Running
+### Сборка и запуск
 
-### Compile and Run
 ```bash
-g++ -o 2048 game.cpp
+# Компиляция
+g++ -o 2048 game.cpp -std=c++11
+
+# Запуск
 ./2048
